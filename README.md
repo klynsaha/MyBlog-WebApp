@@ -1,5 +1,6 @@
-# This webapp is made using Django.
+# MyBlog-WebApp
+This webapp is made using Django.
 
-## Deployed on Heroku
+### Deployed on Heroku
 
 [MyBlog](https://myblog-djangoapp.herokuapp.com)
