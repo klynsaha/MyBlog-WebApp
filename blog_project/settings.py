@@ -27,9 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.getenv('DEBUG') == True)
+DEBUG = (os.getenv('DEBUG') == 'True')
 
-ALLOWED_HOSTS = ['myblog-djangoapp.herokuapp.com']
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['myblog-djangoapp.herokuapp.com']
 
 
 # Application definition
